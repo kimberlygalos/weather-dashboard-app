@@ -1,0 +1,70 @@
+// layout
+
+body {
+  margin: 10rem;
+  box-sizing: border-box;
+}
+
+// blocks
+
+header {
+  width: 100%;
+  display: flex;
+
+  .header__img {
+    border: 1px solid red;
+    height: 25px;
+    width: 25px;
+  }
+
+  .header__setting {
+    margin-left: auto;
+
+    &--reset-btn {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+main {
+  margin: 7rem auto;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+
+  .temperature {
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 10px;
+    height: 20rem;
+    width: 10rem;
+  }
+
+  .weather {
+    border: 1px solid green;
+    height: 20rem;
+    width: 40rem;
+
+    &__week {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 5rem;
+
+      .days {
+        border: 1px soild black;
+        border-radius: 10px;
+        height: 7rem;
+        width: 5rem;
+        background-color: blue;
+      }
+    }
+
+    &__forecast {
+      background-color: blue;
+      border: 1px solid black;
+      height: 8rem;
+      width: 20rem;
+      margin: 0 auto;
+    }
+  }
+}
