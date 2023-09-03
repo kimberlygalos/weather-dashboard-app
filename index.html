@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="provides local & long-range weather forecasts, weather reports, maps & tropical weather conditions for locations nationwide." />
+    <title>theKims Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <img class="header__img" />
+      <div class="header__setting">
+        <select class="header__setting--dropdown">
+          <option value="darkmode">Dark mode</option>
+          <option value="place">Place</option>
+        </select>
+        <button class="header__setting--reset-btn"><img /></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="temperature">
+        <div class="temperature__title">Feels like</div>
+        <div class="temperature--degrees"></div>
+        <div class="temperature--description">
+          <div class="description__icon"></div>
+          <div class="description__text">
+            <div id="precipitation"></div>
+            <div id="humidity"></div>
+            <div id="wind"></div>
+          </div>
+        </div>
+      </section>
+      <section class="weather">
+        <div class="weather__week">
+          <div class="days week__sun"></div>
+          <div class="days week__mon"></div>
+          <div class="days week__tues"></div>
+          <div class="days week__wed"></div>
+          <div class="days week__thurs"></div>
+          <div class="days week__fri"></div>
+          <div class="days week__sat"></div>
+        </div>
+        <div class="weather__forecast">
+          <div class="forecast__container"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
