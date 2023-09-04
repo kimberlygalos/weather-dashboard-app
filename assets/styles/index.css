@@ -25,33 +25,47 @@ main {
   gap: 5rem;
   justify-content: center;
 }
-main .temperature {
+
+.temperature {
   border: 1px solid green;
-  background-color: green;
   border-radius: 10px;
   height: 20rem;
   width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-main .weather {
-  border: 1px solid green;
+.temperature--degrees {
+  border: 1px solid black;
+  height: 7rem;
+  width: 7rem;
+  margin: 2rem 0;
+}
+.temperature--description {
+  border: 1px solid black;
+  height: 4rem;
+  width: 7rem;
+}
+
+.weather {
   height: 20rem;
   width: 40rem;
 }
-main .weather__week {
+.weather__week {
   display: flex;
   gap: 1rem;
   margin-bottom: 5rem;
 }
-main .weather__week .days {
-  border: 1px soild black;
+.weather__week .days {
+  border: 1px solid black;
   border-radius: 10px;
   height: 7rem;
   width: 5rem;
-  background-color: blue;
 }
-main .weather__forecast {
-  background-color: blue;
+.weather__forecast {
   border: 1px solid black;
+  border-radius: 10px;
   height: 8rem;
   width: 20rem;
   margin: 0 auto;

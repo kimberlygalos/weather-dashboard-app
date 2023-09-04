@@ -31,40 +31,54 @@ main {
   display: flex;
   gap: 5rem;
   justify-content: center;
+}
 
-  .temperature {
-    border: 1px solid green;
-    background-color: green;
-    border-radius: 10px;
-    height: 20rem;
-    width: 10rem;
+.temperature {
+  border: 1px solid green;
+  border-radius: 10px;
+  height: 20rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--degrees {
+    border: 1px solid black;
+    height: 7rem;
+    width: 7rem;
+    margin: 2rem 0;
   }
 
-  .weather {
-    border: 1px solid green;
-    height: 20rem;
-    width: 40rem;
+  &--description {
+    border: 1px solid black;
+    height: 4rem;
+    width: 7rem;
+  }
+}
 
-    &__week {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 5rem;
+.weather {
+  height: 20rem;
+  width: 40rem;
 
-      .days {
-        border: 1px soild black;
-        border-radius: 10px;
-        height: 7rem;
-        width: 5rem;
-        background-color: blue;
-      }
-    }
+  &__week {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 5rem;
 
-    &__forecast {
-      background-color: blue;
+    .days {
       border: 1px solid black;
-      height: 8rem;
-      width: 20rem;
-      margin: 0 auto;
+      border-radius: 10px;
+      height: 7rem;
+      width: 5rem;
     }
+  }
+
+  &__forecast {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 8rem;
+    width: 20rem;
+    margin: 0 auto;
   }
 }
